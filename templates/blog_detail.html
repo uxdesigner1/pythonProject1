@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}<title>{{ blog.title }}</title>{% endblock %}
+{% block content %}
+    <h2>{{ blog.title }}</h2>
+    <p>{{ blog.text }}</p>
+    <p>by {{ blog.author }} on {{ blog.created_at }}</p>
+
+    <a href="{% url 'home' %}">Back to List</a>
+   
+      
+{% endblock %}
